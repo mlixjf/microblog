@@ -17,7 +17,6 @@ class Config(object):
                                "?" +
                                "check_same_thread=False")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    DEBUG = True
 
 
 if __name__ == '__main__':
