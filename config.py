@@ -17,6 +17,7 @@ class Config(object):
                                "?" +
                                "check_same_thread=False")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    POSTS_PER_PAGE = 25
 
 
 if __name__ == '__main__':

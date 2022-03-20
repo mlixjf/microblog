@@ -28,4 +28,10 @@
     {% for post in posts %}
         {% include "_post.html" %}
     {% endfor %}
+    {% if prev_rul %}
+    <a href="{{ prev_url }}">Newer posts</a>
+    {% endif %}
+    {% if next_url %}
+    <a href="{{ next }}">Older posts</a>
+    {% endif %}
 {% endblock %}
