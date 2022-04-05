@@ -1,0 +1,551 @@
+[2022-03-20 09:47:33,660 INFO ][Microblog startup  ]
+[2022-03-20 09:47:45,183 ERROR ][Exception on / [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 32, in index
+    return render_template("index.html", titile="Home Page",
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 6, in block 'content'
+    {{ form.hidden_tah() }}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'hidden_tah'
+[2022-03-20 09:47:46,923 ERROR ][Exception on /index [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 32, in index
+    return render_template("index.html", titile="Home Page",
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 6, in block 'content'
+    {{ form.hidden_tah() }}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'hidden_tah'
+[2022-03-20 09:47:49,072 ERROR ][Exception on /index [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 32, in index
+    return render_template("index.html", titile="Home Page",
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 6, in block 'content'
+    {{ form.hidden_tah() }}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'app.forms.PostForm object' has no attribute 'hidden_tah'
+[2022-03-20 09:48:10,445 INFO ][Microblog startup  ]
+[2022-03-20 09:49:05,341 INFO ][Microblog startup  ]
+[2022-03-20 09:51:08,242 INFO ][Microblog startup  ]
+[2022-03-20 09:55:45,625 INFO ][Microblog startup  ]
+[2022-03-20 09:57:16,188 INFO ][Microblog startup  ]
+[2022-03-20 09:57:28,258 INFO ][Microblog startup  ]
+[2022-03-20 10:05:56,648 INFO ][Microblog startup  ]
+[2022-03-20 10:39:40,327 INFO ][Microblog startup  ]
+[2022-03-20 10:39:57,539 ERROR ][Exception on / [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 24, in index
+    return render_template("index.html", titile="Home Page",
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 19, in block 'content'
+    {% include "_post.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\_post.html", line 5, in top-level template code
+    <a href="{{ url_for('user', post.author.username) }}">
+TypeError: url_for() takes 1 positional argument but 2 were given
+[2022-03-20 11:25:40,407 ERROR ][Exception on /index [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 24, in index
+    posts = current_user.followed_posts().paginage(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 19, in block 'content'
+    {% include "_post.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\_post.html", line 5, in top-level template code
+    <a href="{{ url_for('user', username=post.author.username) }}">
+TypeError: url_for() takes 1 positional argument but 2 were given
+[2022-03-20 11:25:44,971 INFO ][Microblog startup  ]
+[2022-03-20 11:25:57,809 ERROR ][Exception on / [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 24, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+[2022-03-20 11:26:20,679 INFO ][Microblog startup  ]
+[2022-03-20 11:29:05,131 ERROR ][Exception on /explore [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 148, in explore
+    return render_template("index.html", title="Explore", posts=posts)
+TypeError: url_for() missing 1 required positional argument: 'endpoint'
+[2022-03-20 11:31:24,095 INFO ][Microblog startup  ]
+[2022-03-20 11:31:38,463 INFO ][Microblog startup  ]
+[2022-03-20 11:32:17,029 INFO ][Microblog startup  ]
+[2022-03-20 11:32:30,509 INFO ][Microblog startup  ]
+[2022-03-20 11:33:14,112 INFO ][Microblog startup  ]
+[2022-03-20 11:36:53,541 INFO ][Microblog startup  ]
+[2022-03-20 11:37:11,320 ERROR ][Exception on / [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 27, in index
+    return render_template("index.html", titile="Home Page",
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 33, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 18, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+[2022-03-20 11:40:16,921 INFO ][Microblog startup  ]
+[2022-03-20 14:02:24,609 INFO ][Microblog startup  ]
+[2022-03-20 14:02:41,242 ERROR ][Exception on /index [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 27, in index
+    next_url = url_for("index", posts.next_num) if posts.has_next else None
+TypeError: url_for() takes 1 positional argument but 2 were given
+[2022-03-20 14:07:06,351 INFO ][Microblog startup  ]
+[2022-03-20 14:13:56,823 INFO ][Microblog startup  ]
+[2022-03-20 14:20:58,605 INFO ][Microblog startup  ]
+[2022-03-20 14:36:27,394 INFO ][Microblog startup  ]
+[2022-03-20 14:36:42,373 ERROR ][Exception on /user/duosan1 [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 84, in user
+    posts = user.posts.order_by(Post.timestamp.desc()).paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+[2022-03-20 14:37:09,393 INFO ][Microblog startup  ]
+[2022-03-20 14:37:12,644 ERROR ][Exception on /user/duosan1 [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 84, in user
+    posts = user.posts.order_by(Post.timestamp.desc()).paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+[2022-03-20 14:37:17,211 INFO ][Microblog startup  ]
+[2022-03-20 14:37:19,394 ERROR ][Exception on /user/duosan1 [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 84, in user
+    posts = user.posts.order_by(Post.timestamp.desc()).paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+[2022-03-20 14:37:58,276 INFO ][Microblog startup  ]
+[2022-03-20 15:31:49,755 INFO ][Microblog startup  ]
+[2022-04-03 18:33:31,485 INFO ][Microblog startup  ]
+[2022-04-03 18:33:32,871 ERROR ][Exception on /login [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 53, in login
+    return render_template("login.html", title="Sign In", form=form)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 30, in template
+    <li><a href="{{ url_for('user', username=current_user.username)">Profile</a></li>
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'string'
+[2022-04-03 18:33:32,971 ERROR ][Exception on /favicon.ico [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1386, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1326, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Home\PycharmProjects\microblog\app\errors.py", line 7, in not_found_error
+    return render_template("404.html"), 404
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 30, in template
+    <li><a href="{{ url_for('user', username=current_user.username)">Profile</a></li>
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'string'
+[2022-04-03 18:38:01,015 INFO ][Microblog startup  ]
+[2022-04-03 18:38:02,314 ERROR ][Exception on /login [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 53, in login
+    return render_template("login.html", title="Sign In", form=form)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\login.html", line 3, in top-level template code
+    {% import "bootstrap/wtf.html" as wtf %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 38, in block 'content'
+    {% block content %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'get_flash_messages' is undefined
+[2022-04-03 18:38:02,359 ERROR ][Exception on /favicon.ico [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1386, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1326, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\Home\PycharmProjects\microblog\app\errors.py", line 7, in not_found_error
+    return render_template("404.html"), 404
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 38, in block 'content'
+    {% block content %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'get_flash_messages' is undefined
+[2022-04-03 18:39:25,577 INFO ][Microblog startup  ]
+[2022-04-03 18:39:26,587 ERROR ][Exception on /login [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 53, in login
+    return render_template("login.html", title="Sign In", form=form)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\login.html", line 3, in top-level template code
+    {% import "bootstrap/wtf.html" as wtf %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 49, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\login.html", line 15, in block 'app_content'
+    Forgot Your Password? <a href="{{ url_for('reset_password_request') }}">Click to reset your password</a>
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+[2022-04-03 18:42:07,839 INFO ][Microblog startup  ]
+[2022-04-03 19:33:09,449 INFO ][Microblog startup  ]
+[2022-04-03 19:33:15,355 ERROR ][Exception on / [GET]  ]
+Traceback (most recent call last):
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Home\PycharmProjects\microblog\app\routes.py", line 29, in index
+    return render_template("index.html", titile="Home", form=form,
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import "bootstrap/wtf.html" as wtf %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\base.html", line 49, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\index.html", line 11, in block 'app_content'
+    {% include "_post.html" %}
+  File "C:\Users\Home\PycharmProjects\microblog\app\templates\_post.html", line 13, in top-level template code
+    said {{ moment(post.timestamp).fomoNow() }}:
+  File "c:\users\home\pycharmprojects\microblog\venv\lib\site-packages\jinja2\utils.py", line 84, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'flask_moment.moment object' has no attribute 'fomoNow'
+[2022-04-03 19:33:30,115 INFO ][Microblog startup  ]
